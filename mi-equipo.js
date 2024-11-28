@@ -16,13 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
             team.forEach(pokemon => {
                 if (pokemon.id && pokemon.name) {
                     const pokemonItem = document.createElement('div');
-                    pokemonItem.classList.add('col-md-4', 'mb-3');
+                    pokemonItem.classList.add("col-12", "col-md-6", "col-lg-4", "mb-4");
                     pokemonItem.innerHTML = `
                         <div class="card">
                             <!-- Imagen del Pokémon -->
                             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png" 
-                                 class="card-img-top" 
-                                 alt="${pokemon.name}">
+                                 class="card-img-top img-fluid mx-auto d-block" 
+                                 alt="${pokemon.name}"
+                                 style="max-width: 200px; height: auto;">
                             <div class="card-body">
                                 <!-- Nombre del Pokémon -->
                                 <h5 class="card-title text-center">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h5>
