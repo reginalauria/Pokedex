@@ -29,7 +29,7 @@ function mostrarPokemon(poke) {
     const div = document.createElement("div");
     div.classList.add("pokemon", "col-12", "col-md-6", "col-lg-4", "mb-4");
     div.innerHTML = ` 
-    <div class="pokemon card h-100 text-center shadow">
+    <div class="pokemon bg-danger text-white card h-100 text-center shadow">
         <p class="pokemon-id-back text-muted mt-2">#${poke.id}</p>
         <img src="${poke.sprites.other['official-artwork'].front_default}"
              class="card-img-top mx-auto pokemon-imagen" alt="${poke.name}"
